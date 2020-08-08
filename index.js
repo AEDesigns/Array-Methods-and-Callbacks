@@ -64,14 +64,14 @@ Parameters:
  * callback function getYears
  */
 
-// function getWinnersByYear(callWin, callYears) {
+function getWinnersByYear(callWin, callYears) {
 
-//     const winnerName = callWin.map( (country, index) => {
-//         return `In ${callYears[index]}, ${country} won the world cup`})
-//     return winnerName;
-// };
+    const winnerName = callWin.map( (country, index) => {
+        return `In ${callYears[index]}, ${country} won the world cup`})
+    return winnerName;
+};
 
-// console.log("Task 5:", getWinnersByYear(getWinners(getFinals(fifaData)), getYears(getFinals(fifaData))));
+console.log("Task 5:", getWinnersByYear(getWinners(getFinals,fifaData), getYears(getFinals(fifaData))));
 
 /* Task 6: Write a function called `getAverageGoals` that accepts a parameter `data` and returns the the average number of home team goals and away team goals scored per match (Hint: use .reduce and do this in 2 steps) */
 
